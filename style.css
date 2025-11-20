@@ -1,0 +1,596 @@
+/* ---------------------------
+   NEON VEIL — GLOBAL THEME
+--------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Rajdhani", sans-serif;
+    color: #e0e0ff;
+    background: radial-gradient(circle at top, #0f0f1a, #000000 70%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/* Animated background grid */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: 
+        linear-gradient(90deg, rgba(0,255,255,0.1) 1px, transparent 1px),
+        linear-gradient(rgba(0,255,255,0.1) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: gridmove 10s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes gridmove {
+    from { transform: translateY(0px); }
+    to { transform: translateY(40px); }
+}
+
+/* ---------------------------
+      NAVIGATION BAR
+--------------------------- */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    border-bottom: 1px solid #00ffff88;
+    box-shadow: 0 0 20px #00ffff55;
+    backdrop-filter: blur(5px);
+}
+
+nav a {
+    color: #00eaff;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 0 0 8px #00ffff;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 0 0 15px #00ffff;
+}
+
+/* ---------------------------
+      HEADINGS & TEXT
+--------------------------- */
+
+h1, h2, h3 {
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 20px;
+    color: #00eaff;
+    text-shadow: 0 0 15px #00ffff, 0 0 25px #0077ff;
+}
+
+h2 {
+    color: #88ccff;
+    text-shadow: 0 0 10px #0099ff;
+}
+
+h3 {
+    color: #00d0ff;
+    text-shadow: 0 0 8px #00aaff;
+}
+
+/* ---------------------------
+      BUTTONS
+--------------------------- */
+
+button {
+    background: transparent;
+    border: 2px solid #00eaff;
+    padding: 12px 25px;
+    font-size: 20px;
+    color: #00eaff;
+    cursor: pointer;
+    margin: 10px;
+    text-shadow: 0 0 10px #00ffff;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+button:hover {
+    background: #00eaff33;
+    box-shadow: 0 0 15px #00ffff;
+    color: white;
+}
+
+/* ---------------------------
+      PAGE CONTAINERS
+--------------------------- */
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.about-section, .story-section {
+    background: rgba(0, 0, 20, 0.5);
+    border-left: 3px solid #00eaff;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px #005577;
+    border-radius: 10px;
+}
+
+/* ---------------------------
+      TABLES
+--------------------------- */
+
+table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    background: rgba(0,0,20,0.7);
+    box-shadow: 0 0 25px #00eaff,0 0 50px inset;
+    border: 5px solid #00eaff;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+    color: #e0f6ff;
+    border: 3px solid rgba(0, 255, 255, 0.35);
+    font-size: 22px;
+}
+/* .rock{
+    border: ;
+} */
+
+/* ---------------------------
+      FORMS
+--------------------------- */
+
+form {
+    width: 50%;
+    margin: auto;
+    background: rgba(0,0,30,0.6);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0088aa;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    background: #020212;
+    border: 1px solid #00eaff55;
+    color: #ccf6ff;
+    margin-bottom: 10px;
+}
+
+/* ---------------------------
+      FOOTER
+--------------------------- */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #88d9ff;
+    text-shadow: 0 0 10px #00aaff;
+}
+.game{
+    
+}
+/* ---------------------------
+      DOWNLOAD PAGE TEXT STYLE
+--------------------------- */
+
+/* Section title */
+.download-section h1,
+.gallery-section h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 45px;
+    color: #00eaff;
+    text-align: center;
+    text-shadow: 0 0 15px #00ffff, 0 0 25px #0077ff;
+    margin-bottom: 20px;
+}
+
+/* Subheadings */
+.download-section h2,
+.gallery-section h2 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 30px;
+    color: #88ccff;
+    text-shadow: 0 0 10px #0099ff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Paragraphs / Text */
+.download-section p,
+.gallery-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d8f5ff;
+    text-shadow: 0 0 6px #00bbff55;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Download cards */
+.download-card {
+    background: rgba(0, 0, 20, 0.55);
+    border: 2px solid #00eaff77;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px auto;
+    width: 70%;
+    box-shadow: 0 0 18px #0088aa77;
+    text-align: center;
+}
+
+/* Download button */
+.download-btn {
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #00eaff;
+    padding: 12px 25px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: #00eaff;
+    text-decoration: none;
+    text-shadow: 0 0 10px #00ffff;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #00eaff33;
+    color: white;
+    box-shadow: 0 0 18px #00ffff;
+}
+
+
+.gallery-item img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #00eaff77;
+    box-shadow: 0 0 20px #00ffff55;
+    transition: 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00ffffaa;
+}
+
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+/* nav a.active {
+    color: white;
+    text-shadow: 0 0 20px #00ffff, 0 0 30px #0099ff;
+    font-weight: 600;
+} */
+ .help-page {
+    text-align: center;
+}
+
+.help-page h1,
+.help-page h2,
+.help-page p {
+    text-align: center;
+}
+/* ---------------------------
+      BIGGER TEXT: ABOUT & STORY PAGES
+--------------------------- */
+
+.about-section p,
+.about-section li,
+.story-section p,
+.story-section li {
+    font-size: 24px;    
+    line-height: 1.7;   
+}
+/* ---------------------------
+   BIGGER TEXT: HELP PAGE
+--------------------------- */
+
+.help-page h1,
+.help-page h2,
+.help-page p {
+    font-size: 26px;
+    line-height: 1.7;
+}
+
+/* ---------------------------
+   BIGGER TEXT: LEADERBOARD PAGE
+--------------------------- */
+
+.leaderboard-page h1 {
+    font-size: 55px;
+}
+
+.leaderboard-page table th,
+.leaderboard-page table td {
+    font-size: 24px;
+    padding: 20px;
+}
+
+/* ---------------------------
+   BIGGER TEXT: DOWNLOAD PAGE
+--------------------------- */
+
+.download-section p,
+.download-card p {
+    font-size: 24px;
+    line-height: 1.7;
+}
+
+.download-section h1 {
+    font-size: 60px;
+}
+
+.download-section h2 {
+    font-size: 40px;
+}
+nav a.active {
+    color: white;
+    text-shadow: 0 0 20px #00ffff;
+    font-weight: 700;
+}
+
+/* ----------------------------------
+      LOGIN PAGE (Neon Veil Theme)
+---------------------------------- */
+
+.login-container {
+    width: 420px;
+    margin: 120px auto;
+    background: rgba(0, 0, 20, 0.55);
+    padding: 35px;
+    border-radius: 15px;
+    border: 2px solid #00eaff88;
+    box-shadow: 0 0 25px #00ffff55;
+    text-align: center;
+}
+
+.login-container h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 45px;
+    color: #00eaff;
+    text-shadow: 0 0 15px #00ffff, 0 0 25px #0088ff;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    color: #dff9ff;
+    text-shadow: 0 0 8px #00aaff88;
+    margin-top: 15px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background: rgba(0, 0, 30, 0.7);
+    border: 1px solid #00eaff55;
+    border-radius: 8px;
+    color: #dff9ff;
+    font-size: 16px;
+    box-shadow: 0 0 12px #0077aa55 inset;
+}
+
+.login-container input:focus {
+    outline: none;
+    border: 1px solid #00eaff;
+    box-shadow: 0 0 15px #00eaff;
+}
+
+.login-btn {
+    width: 100%;
+    display: block;
+    margin-top: 25px;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid #00eaff;
+    border-radius: 10px;
+    font-size: 22px;
+    color: #00eaff;
+    cursor: pointer;
+    text-shadow: 0 0 10px #00ffff;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #00eaff33;
+    color: white;
+    box-shadow: 0 0 20px #00ffff;
+}
+
+.login-footer-links {
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+.login-footer-links a {
+    color: #76d9ff;
+    text-decoration: none;
+    text-shadow: 0 0 8px #00bbff;
+}
+
+.login-footer-links a:hover {
+    color: white;
+    text-shadow: 0 0 12px #00eaff;
+}
+nav a.active {
+    color: #00eaff !important;
+    text-shadow: 0 0 8px #00ffff !important;
+    font-weight: normal !important;
+}
+.banner-buttons{
+    text-align:center;
+}
+/* image for home page */
+.image{
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 40px; 
+    margin-top: 40px;
+    border: #0088ff;
+}
+.banner-image{
+    width: 300px; 
+    height: auto; 
+    margin: 0;
+}
+/* contact */
+/* ========== CONTACT PAGE LAYOUT ========== */
+
+.contact-section {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    color: #b4eaff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.contact-section h1 {
+    font-size: 55px;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff;
+    color: #00eaff;
+}
+
+.contact-section p {
+    width: 80%;
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccefff;
+}
+
+/* MAIN FLEXBOX */
+.contact-container {
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* ========== RIGHT INFO BLOCK (Address, Phone, Email) ========== */
+
+.contact-info {
+    width: 35%;
+    text-align: left;
+    color: #ccefff;
+    padding-left: 20px;
+}
+
+.contact-info h3 {
+    color: #00eaff;
+    font-size: 22px;
+    text-shadow: 0 0 7px #00eaff;
+    margin-bottom: 5px;
+}
+
+/* ========== LEFT FORM BOX ========== */
+
+.contact-form-box {
+    width: 55%;
+    background: rgba(0, 15, 30, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #00eaff;
+    box-shadow: 0 0 15px #00eaff;
+}
+
+.contact-form-box h2 {
+    color: #00eaff;
+    text-align: left;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+/* FORM STYLING */
+form label {
+    color: #ccefff;
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    background: rgba(0, 10, 20, 0.7);
+    border: 1px solid #00eaff;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* TEXTAREA HEIGHT */
+form textarea {
+    height: 120px;
+}
+
+/* SEND BUTTON */
+form button {
+    margin-top: 20px;
+    width: 140px;
+    padding: 12px;
+    background-color: #00eaff;
+    border: none;
+    outline: none;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Orbitron'(Light 300);
+    box-shadow: 0 0 10px #00eaff;
+    transition: 0.2s ease-in-out;
+}
+
+/* SEND BUTTON HOVER (WHITE GLOW) */
+form button:hover {
+    background: #ffffff;
+    color: #000;
+    box-shadow: 0 0 15px #ffffff, 0 0 30px #ffffff;
+}
+
+/* ========== NAVBAR WHITE GLOW HOVER ========== */
+
+nav a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 0 10px #ffffff, 0 0 25px #ffffff;
+}
+.tagline {
+    margin-top: 40px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    color: #89bfff;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 0 0 8px #4cc3ff;
+}

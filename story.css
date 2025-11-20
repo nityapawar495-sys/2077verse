@@ -1,0 +1,265 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a0a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(180deg, #000 0%, #0a0a0a 100%);
+        }
+
+        .logo {
+            font-size: 4em;
+            font-weight: bold;
+            color: #00ffff;
+            text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff, 0 0 60px #00ffff;
+            letter-spacing: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Navigation */
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #00ffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        nav a:hover {
+            text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+        }
+
+        nav a.active {
+            text-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .story-section {
+            background: rgba(0, 255, 255, 0.05);
+            border: 2px solid #00ffff;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+            position: relative;
+        }
+
+        .story-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(0, 255, 255, 0.02) 0%, rgba(0, 0, 0, 0) 100%);
+            border-radius: 15px;
+            pointer-events: none;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            color: #00ffff;
+            text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: 5px;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            color: #00ffff;
+            text-shadow: 0 0 15px #00ffff;
+            margin-bottom: 25px;
+            border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.9;
+            margin-bottom: 20px;
+            color: #e0e0e0;
+            text-align: justify;
+        }
+
+        .intro {
+            font-size: 1.4em;
+            font-style: italic;
+            color: #00ffff;
+            text-align: center;
+            line-height: 2;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        .tagline {
+            font-size: 1.4em;
+            text-align: center;
+            color: #00ffff;
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid #00ffff;
+            border-radius: 10px;
+            background: rgba(0, 255, 255, 0.1);
+            text-shadow: 0 0 15px #00ffff;
+        }
+
+        .tagline strong {
+            letter-spacing: 2px;
+        }
+
+        /* Themes Grid */
+        .themes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .theme-box {
+            background: rgba(0, 255, 255, 0.08);
+            border: 2px solid #00ffff;
+            border-radius: 10px;
+            padding: 30px;
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .theme-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.5s;
+        }
+
+        .theme-box:hover::before {
+            left: 100%;
+        }
+
+        .theme-box:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.6);
+            border-color: #00ffff;
+        }
+
+        .theme-box h3 {
+            color: #00ffff;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            text-shadow: 0 0 10px #00ffff;
+            position: relative;
+            z-index: 1;
+        }
+
+        .theme-box p {
+            color: #d0d0d0;
+            font-size: 1.1em;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+            text-align: left;
+        }
+
+        strong {
+            color: #00ffff;
+            text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+        }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #00ffff;
+            border-radius: 6px;
+            box-shadow: 0 0 10px #00ffff;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00cccc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #000;
+            margin-top: 80px;
+            border-top: 2px solid #00ffff;
+        }
+
+        footer p {
+            color: #00ffff;
+            font-size: 1em;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5em;
+                letter-spacing: 5px;
+            }
+
+            nav a {
+                margin: 0 10px;
+                font-size: 1em;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            .intro {
+                font-size: 1.2em;
+            }
+
+            .tagline {
+                font-size: 1.2em;
+            }
+
+            .story-section {
+                padding: 25px;
+            }
+
+            .themes {
+                grid-template-columns: 1fr;
+            }
+        }

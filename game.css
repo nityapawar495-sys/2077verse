@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url("/Users/nityapawar/Pictures/Photos Library.photoslibrary/resources/derivatives/C/CF6E5C3F-C3ED-4B50-85A5-59E6DE3FF18F_1_105_c.jpeg"); /* 👈 replace with your image path or URL */
+    background-size: cover;                  /* makes the image fill the screen */
+    background-position: center;             /* centers the image */
+    background-repeat: no-repeat;            /* prevents tiling */
+    background-attachment: fixed; 
+}
+
+
+
+.glow{
+    text-align: center;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 0 0 10px #00ffff, 
+               0 0 20px #00ffff, 
+               0 0 30px #00ffff;
+    padding: 0px;
+    margin-top: 20px;
+}
+.trailer {
+  
+  background: transparent;
+  color: #4deeea;
+  border: 2px solid #37b8d4;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow:
+    0 0 10px #37b8d4,
+    0 0 20px #1aa7ec,
+    inset 0 0 10px #37b8d4;
+margin-top: 60px;
+margin-right: 60px;
+margin-left: 70px;
+margin-bottom: 60px;
+}
+
+.trailer:hover {
+  color: #00111a;
+  background: #37b8d4;
+  box-shadow:
+    0 0 25px #37b8d4,
+    0 0 45px #1aa7ec,
+    0 0 65px #00c8ff,
+    inset 0 0 25px #1aa7ec;
+  transform: scale(1.05);
+}
+.demo{
+    background: transparent;
+  color: #4deeea;
+  border: 2px solid #37b8d4;
+  padding: 14px 40px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow:
+    0 0 10px #37b8d4,
+    0 0 20px #1aa7ec,
+    inset 0 0 10px #37b8d4;
+margin-top: 60px;
+margin-right: 60px;
+margin-left: 70px;
+margin-bottom: 60px;
+}
+.demo:hover{
+     color: #00111a;
+  background: #37b8d4;
+  box-shadow:
+    0 0 25px #37b8d4,
+    0 0 45px #1aa7ec,
+    0 0 65px #00c8ff,
+    inset 0 0 25px #1aa7ec;
+  transform: scale(1.05);
+}
+.nav-link{
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* spacing between page names */
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: white;
+}
+.nav-link:hover{
+    text-shadow: 0 0 10px #ddf566, 0 0 20px #0095ff;
+
+}
