@@ -60,9 +60,9 @@ nav a:hover {
     text-shadow: 0 0 15px #00ffff;
 }
 
-/* ---------------------------
+/* 
       HEADINGS & TEXT
---------------------------- */
+ */
 
 h1, h2, h3 {
     font-family: "Orbitron", sans-serif;
@@ -149,13 +149,10 @@ th, td {
     border: 3px solid rgba(0, 255, 255, 0.35);
     font-size: 22px;
 }
-/* .rock{
-    border: ;
-} */
 
-/* ---------------------------
+/* 
       FORMS
---------------------------- */
+ */
 
 form {
     width: 50%;
@@ -259,33 +256,9 @@ footer {
 }
 
 
-.gallery-item img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    border: 3px solid #00eaff77;
-    box-shadow: 0 0 20px #00ffff55;
-    transition: 0.3s;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px #00ffffaa;
-}
 
 
-.gallery-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-    margin-top: 20px;
-}
-/* nav a.active {
-    color: white;
-    text-shadow: 0 0 20px #00ffff, 0 0 30px #0099ff;
-    font-weight: 600;
-} */
+ /* HELP PAGE  */
  .help-page {
     text-align: center;
 }
@@ -529,7 +502,7 @@ nav a.active {
     text-shadow: 0 0 10px #00eaff;
 }
 
-/* FORM STYLING */
+FORM STYLING
 form label {
     color: #ccefff;
     display: block;
@@ -598,14 +571,10 @@ nav a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
-    /* Optional: Keeps it from being too huge on big screens */
     width: 900px; 
     height: 600px;
-    
-    /* Optional: Adds a little space from the top */
     margin-top: 50px; 
-    border: 2px solid #00ffff; /* Adds a neon border to match your theme */
+    border: 2px solid #00ffff; 
 }
 .chr{
     display: block;
@@ -613,5 +582,6 @@ nav a:hover {
     margin-right: auto;
     width: 900px;
     height: 700px;
+    border: #00d0ff;
 
 }
